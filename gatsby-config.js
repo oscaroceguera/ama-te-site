@@ -1,11 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ama té site`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    links: [
+      { link: '#beneficios', name: 'Beneficios' },
+      { link: '#incluye', name: '¿Qué incluye?' },
+      { link: '#conseguir', name: '¿Cómo lo puedo conseguir?' },
+      { link: '#contacto', name: 'Contacto' },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,6 +49,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

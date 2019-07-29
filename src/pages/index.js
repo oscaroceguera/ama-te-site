@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import Image from "../components/Images/image"
+import SEO from "../components/Seo"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +15,14 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <a name="beneficios"></a>
+    <div style={{border: '1px solid red', height: '90vh'}}>
+      <h1>BENEFICIOS</h1>
+    </div>
+    <a name="incluye"></a>
+    <div style={{border: '1px solid red', height: '90vh'}}>
+      <h1>¿QUÉ INCLUYE?</h1>
+    </div>
   </Layout>
 )
 

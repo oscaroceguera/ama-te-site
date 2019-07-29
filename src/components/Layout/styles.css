@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -7,6 +8,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 article,
 aside,
@@ -615,6 +617,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+:root {
+  --bg-orange: #FFF3E0;
+  --text: #212121;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
