@@ -7,12 +7,11 @@ import Logo from '../Images/logo'
 const Container = styled.div`
   padding-top: .7em;
   font-family: 'Roboto';
-  border: 1px solid;
 `
 
 const Inner = styled.div`
   margin: 0 auto;
-  padding: 0 9.8125em;
+  padding: 0 10%;
   display: flex;
   justify-content: space-between;
 `
@@ -27,7 +26,7 @@ const Link = styled.a`
   font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
-  padding: 0 2.5em;
+  padding: 0 1em;
   transition: .3s;
   &:hover {
     opacity: 0.7;

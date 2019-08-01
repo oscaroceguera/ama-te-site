@@ -9,7 +9,10 @@ import "./styles.css"
 const Container = styled.div`
   margin: 0 auto;
   padding: 0px;
-  border: 1px solid red;
+`
+
+const Main = styled.div`
+  border: 1px solid white;
 `
 
 const Layout = ({ children }) => {
@@ -34,12 +37,7 @@ const Layout = ({ children }) => {
         links={data.site.siteMetadata.links}
       />
       <Container>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Main>{children}</Main>
       </Container>
     </>
   )
